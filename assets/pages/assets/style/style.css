@@ -1,0 +1,143 @@
+@font-face {
+    font-family: "Intro";
+    src: url("./fonts/intro-regular.woff2");
+}
+@font-face {
+    font-family: "RobotoSlab";
+    font-weight: 300;
+    src: url("./fonts/RobotoSlab-Light.ttf");
+}
+
+/* SIZES & LAYOUT */
+*{
+    margin: 0;
+    padding: 0;
+}
+.body {
+    display: flex;
+    flex-direction: column;
+}
+.header {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    padding: 4.5rem 3.8rem 0.1rem 3.8rem;
+}
+.header__logo {
+    width: 10rem;
+    height: 2rem;
+    padding: 0;
+    margin: 0;
+}
+.button {
+    width: 5.8rem;
+    height: 1.9rem;
+    padding: 0;
+    margin: 0;
+}
+.button__img {
+    margin-left: 0.3rem;
+}
+.container {
+    margin: 5rem 3.8rem 0 6.3rem;
+    display: flex;
+    flex-direction: column;
+}
+.container__wrap {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(auto-fit, 18.3rem);
+    gap: 3.5rem;
+}
+.container__title_medium {
+    margin: 0;
+    padding: 0.5rem 0 0 0;
+    font-size: 1.5rem;
+}
+.container__subscribe-form {
+    padding: 0 1rem 0 1rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+.container__title_medium-white {
+    margin-bottom: 0.3rem;
+}
+.container__input {
+    width: 100%;
+    height: 2.5rem;
+    box-sizing: border-box;
+    padding-left: 0.2rem;
+}
+.button_medium {
+    width: 6.8rem;
+    height: 1.9rem;
+    margin: 1rem 0 2.7rem 0;
+}
+.footer {
+    margin: 5rem 0 4rem 6.3rem;
+}
+.footer__list {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-self: start;
+    gap: 1.5rem;
+}
+
+/* FONTS & STYLES */
+html {
+    font-size: 20px;
+    font-family: "RobotoSlab";
+}
+.button {
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    font-family: "Intro";
+    font-weight: 400;
+    text-transform: uppercase;
+    border-radius: 100px;
+    background: rgb(82, 34, 208);
+    font-size: 0.65rem;
+}
+.container__title {
+    margin: 0 0 2rem 0;
+    color: rgb(14, 10, 10);
+    font-family: "Intro";
+    font-size: 3rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.container__title_medium {
+    font-size: 1.5rem;
+}
+.container__desc {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: 300;
+    text-align: left;
+}
+.container__subscribe-form {
+    background-color: rgb(236, 97, 91);
+}
+.container__title_medium-white {
+    color: #fff;
+}
+.footer__nav {
+    text-wrap: nowrap;
+}
+.footer__list {
+    list-style: none;
+}
+.footer__nav-link {
+    color: rgb(82, 34, 208);
+    text-decoration: none;
+}
+/* EFFECTS */
+.footer__nav-link:hover {
+    color: rgb(112, 71, 215);
+}
+.footer__nav-link:active {
+    color: rgb(193, 178, 230);
+}

@@ -1,0 +1,126 @@
+@font-face {
+    font-family: "Intro";
+    src: url("./fonts/intro-regular.woff2");
+}
+@font-face {
+    font-family: "RobotoSlab";
+    font-weight: 300;
+    src: url("./fonts/RobotoSlab-Light.ttf");
+}
+
+/* SIZES & LAYOUT */
+*{
+    margin: 0;
+    padding: 0;
+}
+html {
+    height: 100%;
+}
+.body {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: 1fr;
+}
+.body__wrap{
+    min-height: 100%;
+    display: grid;
+    grid-template-areas: 
+    "hd hd hd hd hd hd hd"
+    "p1 p1 p1 p2 p2 p2 p2"
+    "p1 p1 p1 p2 p2 p2 p2"
+    "ft ft ft p2 p2 p2 p2";
+}
+.header {
+    grid-area: hd;
+    display: flex;
+    justify-content: space-between;
+    padding: 4.5rem 3.8rem 0 3.8rem;
+}
+.header__logo {
+    width: 10rem;
+    height: 2rem;
+}
+.button {
+    width: 5.8rem;
+    height: 1.9rem;
+}
+.button__img {
+    margin-left: 0.3rem;
+}
+.container {
+    margin-left: 6.3rem;
+    grid-area: p1;
+}
+.container__title {
+    margin-top: 3.8rem;
+}
+.button_large {
+    width: 13.5rem;
+    height: 4.2rem;
+    margin-top: 1.5rem;
+    padding-top: 0.5rem;
+}
+.container__img {
+    grid-area: p2;
+}
+.footer {
+    grid-area: ft;
+    margin: 7.5rem 0 4rem 6.3rem;
+}
+.footer__list {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-self: start;
+    gap: 1.5rem;
+}
+
+/* FONTS & STYLES */
+html {
+    font-size: 20px;
+}
+.button {
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    font-size: 0.65rem;
+    font-family: "Intro";
+    font-weight: 400;
+    text-transform: uppercase;
+    border-radius: 100px;
+    background: rgb(82, 34, 208);
+}
+.container__title {
+    color: rgb(14, 10, 10);
+    font-family: "Intro";
+    font-size: 60px;
+    font-weight: 400;
+}
+.container__desc {
+    color: rgb(0, 0, 0);
+    font-family: "RobotoSlab";
+    font-size: 20px;
+    font-weight: 300;
+    text-align: left;
+}
+.button_large {
+    font-size: 1.8rem;
+}
+.footer__nav {
+    text-wrap: nowrap;
+}
+.footer__list {
+    list-style: none;
+}
+.footer__nav-link {
+    font-family: "RobotoSlab";
+    color: rgb(82, 34, 208);
+    text-decoration: none;
+}
+/* EFFECTS */
+.footer__nav-link:hover {
+    color: rgb(112, 71, 215);
+}
+.footer__nav-link:active {
+    color: rgb(193, 178, 230);
+}
